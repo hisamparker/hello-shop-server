@@ -3,13 +3,30 @@
   "version": "1.0.0",
   "description": "server for tutorial site",
   "main": "server.js",
+  "type": "module",
   "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "import:data": "node seed",
+    "destroy:data": "node seed -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "hello-shop-server"
+    "url": "git + https://github.com/hisamparker/hello-shop-server.git"
   },
   "author": "hisam",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.5",
+    "nodemon": "^2.0.12"
+  }
 }

@@ -1,0 +1,1 @@
+Left on user controllers / user routes, need to convert verify user and is admin to use http cookies and need to update user controllers to relfect this
